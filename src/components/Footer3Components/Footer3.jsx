@@ -4,9 +4,9 @@ import "./Footer3.css"
 
 export default function Footer3(){
     return(
-        <footer className="center">
-            <div className="questions3">Questions? Contact us.</div>
-            <ul className="list">
+        <footer className="footer3">
+            <div className="questions underline sub-footer3">Questions? Contact us.</div>
+            <ul className="list sub-footer3 underline">
                 <li>FAQ</li>
                 <li>Help Center</li>
                 <li>Account</li>
@@ -23,8 +23,10 @@ export default function Footer3(){
                 <li>Legal Notices</li>
                 <li>Only on Netflix</li>
             </ul>
+            <div className="bt">
             <Btn2/>
-            <div className="batata">Netflix Lebanon</div>
+            </div>
+            <div className="underline batata">Netflix Lebanon</div>
         </footer>
     )
 }

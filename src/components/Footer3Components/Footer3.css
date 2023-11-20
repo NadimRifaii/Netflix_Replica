@@ -24,7 +24,7 @@ footer{
     align-items: center;
 }
 
-.questions3{
+.questions{
     color: #737373;
     cursor: pointer;
     font-size: 1rem;
@@ -38,15 +38,19 @@ footer{
     row-gap: 10px;
     list-style: none;
     box-sizing: border-box;
-    font-size: 13px;
     max-width: 1000px;
     flex-wrap: wrap;
     display: block;
     list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-top: 0.75rem;
+    width: 100%;
+    font-size: 0.875rem;
+    font-weight: 400;
+    height: inherit;
+    margin-left: -0.75rem;
+    width: calc(100% + 0.75rem);
+    flex-direction: row;
+    padding: 0px;
 }
 
 .list > li{
@@ -68,5 +72,145 @@ footer{
 }
 
 .list > li:hover{
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 1280px){
+.footer3{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+}
+
+@media screen and (min-width: 960px){
+.footer3 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+}
+
+@media screen and (min-width: 600px){
+.footer3{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+}
+
+@media screen and (max-width: 960px){
+    .list > li{
+        width: 25%;
+}    
+}
+
+.footer3{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+@media screen and (min-width: 1280px){
+.footer3{
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+}
+}
+
+@media screen and (min-width: 960px){
+.footer3{
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+}
+}
+
+@media screen and (min-width: 600px){
+.footer3{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+}
+
+.footer3{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1280px){
+.footer3{
+    max-width: calc(83.33333333333334% - 6rem);
+}
+}
+
+.footer3{
+    color: rgba(255,255,255,0.7);
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.sub-footer3{
+    box-sizing: border-box;
+    width: 100%;
+    display: inherit;
+    height: auto;
+}
+
+
+@media screen and (min-width: 1280px){
+.list > li {
+    -webkit-flex: 0 0 calc(25% - 0.75rem);
+    -ms-flex: 0 0 calc(25% - 0.75rem);
+    flex: 0 0 calc(25% - 0.75rem);
+}
+}
+
+@media screen and (min-width: 960px){
+.list > li {
+    -webkit-flex: 0 0 calc(25% - 0.75rem);
+    -ms-flex: 0 0 calc(25% - 0.75rem);
+    flex: 0 0 calc(25% - 0.75rem);
+}
+}
+
+@media screen and (min-width: 600px){
+.list > li{
+    -webkit-flex: 0 0 calc(50% - 0.75rem);
+    -ms-flex: 0 0 calc(50% - 0.75rem);
+    flex: 0 0 calc(50% - 0.75rem);
+}
+}
+
+.list > li {
+    -webkit-flex: 0 0 calc(50% - 0.75rem);
+    -ms-flex: 0 0 calc(50% - 0.75rem);
+    flex: 0 0 calc(50% - 0.75rem);
+}
+
+.list > li{
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: inherit;
+    padding: 0px;
+}
+.list {
+    margin-top: 1rem;
+    margin-left: 0.75rem;
+}
+.footer3 {
+    box-sizing: border-box;
+}
+
+.bt{
+    width: 122px;
+    height: 32px;
+}
+
+.underline{
+    text-decoration: underline;
+}
+.underline > li{
     text-decoration: underline;
 }
