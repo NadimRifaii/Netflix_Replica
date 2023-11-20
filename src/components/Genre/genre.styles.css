@@ -1,0 +1,8 @@
+.genres h1 {
+  text-align: left;
+  width: unset;
+}
+
+.genres p {
+  max-width: 600px;
+}
