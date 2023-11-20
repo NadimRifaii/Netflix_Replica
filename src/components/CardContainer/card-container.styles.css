@@ -1,0 +1,72 @@
+.card-container {
+  margin: auto;
+  position: relative;
+  margin-top: 40px;
+}
+
+.card-container h2 {
+  padding-left: 10px;
+}
+
+.cards-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+.card-container span.before,
+.card-container span.after {
+  display: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border-radius: 50%;
+  display: none;
+  place-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
+}
+
+
+@media (min-width:992px) {
+  .card-container span.before {
+    left: -25px;
+    display: grid;
+  }
+
+  .card-container span.after {
+    display: grid;
+    right: -30px;
+  }
+
+  .cards-holder::-webkit-scrollbar {
+    width: 0px;
+    /* Set the width of the scrollbar */
+  }
+}
+
+@media (max-width:992px) {
+  .cards-holder::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .cards-holder::-webkit-scrollbar-thumb {
+    background-color: hsla(250, 6%, 20%, 1);
+    border-radius: 8px;
+    ;
+  }
+}
+
+.cards-holder>div {
+  min-width: 300px;
+}
