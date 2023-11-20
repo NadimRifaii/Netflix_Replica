@@ -1,0 +1,23 @@
+.more-details-container {
+    padding: 0 30px;
+    display: felx;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.smaller {
+    font-size: smaller; 
+    left: 0;
+}
+
+.section {
+    width: 250px;
+}
+
+.section p {
+    text-align: left;
+}
