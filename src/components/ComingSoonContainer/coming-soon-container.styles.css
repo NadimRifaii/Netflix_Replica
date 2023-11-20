@@ -1,0 +1,11 @@
+.coming-soon-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.coming-soon-container > div{
+    width : calc(97% / 4);
+}
