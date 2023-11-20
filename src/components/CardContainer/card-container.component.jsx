@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react"
 import Card from "../Card/card.component"
-import { getMoviesByGenre } from '../../utiles/api.utiles'
+import { getMoviesByGenre } from '../../utils/api.utiles'
 import './card-container.styles.css'
 const CardContainer = ({ genre }) => {
   const [moviesArray, setMoviesArray] = useState([])
