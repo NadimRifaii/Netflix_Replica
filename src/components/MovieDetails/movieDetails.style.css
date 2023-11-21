@@ -3,6 +3,7 @@
     display: flex;
     padding-left: 30px;
     align-items: center; 
+    color: white;
 }
 
 .movie-details {
@@ -23,6 +24,6 @@
 }
 
 .movie-rating{
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 2px;
 }
