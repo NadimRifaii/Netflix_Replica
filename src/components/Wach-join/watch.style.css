@@ -1,0 +1,40 @@
+.watch-container {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-content p {
+    color: white;
+}
+
+.watch-join{
+    width: 90%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2e2e2e;
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Center the content inside */
+}
+
+.logo-content {
+    display: flex;
+    align-items: center;
+}
+
+svg{
+    width : 20px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+ button {
+    background-color: #e50914;
+    padding: 10px;
+    border: none;
+    color: white;
+    margin: 7px;
+    margin-right: 20px;
+    height: 35px;
+}

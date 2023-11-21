@@ -1,0 +1,29 @@
+.movie-details-container {
+    height:calc(100vh - 24px);
+    display: flex;
+    padding-left: 30px;
+    align-items: center; 
+    color: white;
+}
+
+.movie-details {
+    display: block;
+    max-width: 500px;
+}
+
+.desc {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.watch-des {
+    margin-top: 10px;
+}
+
+.movie-year, .movie-rating, .movie-duration, .movie-genre {
+    font-size: smaller;
+}
+
+.movie-rating{
+    border: 1px solid white;
+    padding: 2px;
+}
