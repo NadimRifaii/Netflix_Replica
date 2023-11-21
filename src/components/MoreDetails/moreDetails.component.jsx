@@ -44,7 +44,7 @@ const MoreDetails = ({ details: { casts, genres } }) => {
                 {
                     casts.cast.map((cas, index) => {
                         if (index < 8)
-                            return <span>{cas.name}</span>
+                            return <span key={index}>{cas.name}</span>
                         else {
                             return
                         }
