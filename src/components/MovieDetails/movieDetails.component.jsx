@@ -37,22 +37,22 @@ const MovieDetails = (props) => {
             backgroundRepeat: 'no-repeat',
         }} >
             <div className="movie-details">
-            <div>
-                <span class="movie-title"> <h2>{title}</h2></span>
+                <div>
+                    <span class="movie-title"> <h2>{title}</h2></span>
+                </div>
+                <div>
+                    <span class="movie-year">{date.split('-')[0]} |  </span>
+                    <span class="movie-rating">18+</span>
+                    <span class="movie-duration"> | {convertMinutesToHoursAndMinutes(runtime)} |  </span>
+                    <span class="movie-genre">{genres[0].name}</span>
+                </div>
+                <div className="desc">
+                    <span class="movie-plot">{overview}.</span>
+                </div>
+                <div>
+                    <span class="movie-stars">Starring: {getFirstThreeCast(casts.cast)}</span>
+                </div>
             </div>
-            <div>
-                <span class="movie-year">{date.split('-')[0]} |  </span>
-                <span class="movie-rating">18+</span>
-                <span class="movie-duration"> | {convertMinutesToHoursAndMinutes(runtime)} |  </span>
-                <span class="movie-genre">{genres[0].name}</span>
-            </div>
-            <div className="desc">
-                <span class="movie-plot">{overview}.</span>
-            </div>
-            <div>
-                <span class="movie-stars">Starring: {getFirstThreeCast(casts.cast)}</span>
-            </div>
-        </div>
         </div >
         <MoreDetails details={{genres, casts }} />
         </div>
