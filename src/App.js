@@ -7,7 +7,7 @@ import ImagesContainer from './components/ImagesContainer/images-container.compo
 
 function App() {
   return (
-    <ComingSoonContainer />
+   <ImagesContainer />
     
   );
 }

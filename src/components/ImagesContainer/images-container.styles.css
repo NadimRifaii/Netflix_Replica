@@ -10,14 +10,14 @@
     width: calc(97% / 4)
 }
 
-@media (max-width: 992px){
+@media (max-width: 1440px){
     .images-container >div{
         width: calc(97% / 3)
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 1024px){
     .images-container >div{
-        width: 97%;
+        width: calc(97%/2);
     }
 }
