@@ -21,18 +21,6 @@ export async function getMoviesByGenre(genre) {
   }
 }
 
-export async function getMovieDetails(movieId) {
-  return fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=ad1a2a4cb80d72ec16fe712446738ea8&append_to_response=casts,videos,images,releases`)
-    .then(response => response.json())
-    .then(data => {
-      console.log(data)
-      return data
-    })
-    .catch(error => {
-      console.log(error)
-    })
-}
-
 
 export async function getMovieDetails(movieId) {
   return fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=ad1a2a4cb80d72ec16fe712446738ea8&append_to_response=casts,videos,images,releases`)
@@ -42,6 +30,33 @@ export async function getMovieDetails(movieId) {
     .then((data) => {
       console.log(data)
       return data
+    })
+    .catch((error) => {
+      return error
+    })
+}
+
+export async function getSimilarMovies(movieId) {
+  return fetch(`https://api.themoviedb.org/3/movie/${movieId}/similar?api_key=ad1a2a4cb80d72ec16fe712446738ea8`)
+    .then((response) => {
+      return response.json()
+    })
+    .then((data) => {
+      console.log(data)
+      return data
+    })
+    .catch((error) => {
+      return error
+    })
+}
+
+export async function getComingSoonMovies() {
+  return fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=ad1a2a4cb80d72ec16fe712446738ea8`)
+    .then((response) => {
+      return response.json()
+    })
+    .then((data) => {
+      return data.results
     })
     .catch((error) => {
       return error

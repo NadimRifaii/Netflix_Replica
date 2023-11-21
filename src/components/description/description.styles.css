@@ -1,0 +1,25 @@
+.description-container >div{
+    width: 50%;
+}
+
+.flex-row{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.flex-row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    align-content: center;
+}
+
+@media (max-width:992px){
+    .description-container >div{
+        width: 100%;
+    }
+    .description-container{
+        flex-direction: column;
+    }
+}

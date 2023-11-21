@@ -1,0 +1,30 @@
+.coming-soon-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #181818;
+    gap:10px;
+}
+
+.coming-soon-container > div{
+    width : calc(97% / 4);
+}
+
+@media (max-width: 1440px){
+    .coming-soon-container >div{
+        width: calc(97% / 3)
+    }
+}
+
+@media (max-width: 1024px){
+    .coming-soon-container >dib{
+        width: calc(97 / 2)
+    }
+}
+
+@media (max-width: 600px){
+    .coming-soon-container >div{
+        width: 97%;
+    }
+}
