@@ -13,4 +13,4 @@ const ImagesContainer=({images}) => {
     )
 }
 
-export default ImagesContainer
+export default ImagesContainer;
