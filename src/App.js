@@ -1,11 +1,13 @@
-import logo from './logo.svg';
+
 import './App.css';
+import ComingSoonContainer from './components/ComingSoonContainer/coming-soon-container.component.jsx';
+
+
 
 function App() {
   return (
-    <>
-      {/* comment */}
-    </>
+     <ComingSoonContainer />
+    
   );
 }
 export default App;

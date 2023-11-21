@@ -12,3 +12,5 @@ const Description = ({ reverseOrder, header, paragraph, tvImage, tvVideo, applyC
     </div>
   );
 };
+
+export default Description

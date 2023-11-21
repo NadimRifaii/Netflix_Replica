@@ -13,3 +13,5 @@ const VideoOverImage = ({tvImage, tvVideo, applyConditionalStyle}) => {
         </div>
     );
 };
+
+export default VideoOverImage;

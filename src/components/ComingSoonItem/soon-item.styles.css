@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: black;
+    background-color: #181818;
 }
 
 .movie-title{
@@ -17,5 +17,5 @@
     line-height: 18px;
     font-weight: 400;
     color: #a3a3a3;
-    width:85%;
+    width:80%;
 }
