@@ -1,6 +1,6 @@
 .more-details-container {
     padding: 0 30px;
-    display: felx;
+    display: flex;
     flex-direction: column;
 }
 
@@ -11,13 +11,28 @@
 
 .smaller {
     font-size: smaller; 
-    left: 0;
 }
 
 .section {
-    width: 250px;
+    width: 340px;
 }
 
 .section p {
     text-align: left;
+}
+
+
+.cast {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cast p {
+    width: 25%; /* Two items per row */ 
+}
+
+@media (max-width : 767px){
+    .content {
+        flex-direction: row;
+    }
 }
