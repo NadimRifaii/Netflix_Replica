@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import CardContainer from "../CardContainer/card-container.component"
-import { getMovieGenres } from '../../utils/api.utiles'
+import { getMovieGenres } from '../../utils/api.utils'
 // css imports
 import './genre.styles.css'
 const Genre = () => {
