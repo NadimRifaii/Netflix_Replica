@@ -1,0 +1,19 @@
+.input-button{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: 10px auto;
+    gap: 15px;
+}
+
+@media (max-width : 767px){
+    .input-button{
+        flex-direction: column;
+    }
+
+    .input-button button {
+        display: block;
+        width: fit-content;
+        margin: auto;
+    }
+}
