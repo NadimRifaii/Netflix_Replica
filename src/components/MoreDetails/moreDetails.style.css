@@ -7,14 +7,20 @@
 .content {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.content .smaller {
+    margin: 0;
 }
 
 .smaller {
-    font-size: smaller; 
+    margin: 1px 6px;
 }
 
 .section {
-    width: 340px;
+    flex: 1;
 }
 
 .section p {
@@ -22,16 +28,39 @@
 }
 
 
-.cast {
-    display: flex;
-    flex-wrap: wrap;
+.cast,
+.content {
+    display: grid;
+    grid-template-columns: 33.333% 33.333% 33.333%;
 }
 
-.cast p {
-    width: 25%; /* Two items per row */ 
+@media (max-width:992px) {
+
+    .cast,
+    .content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
 }
 
-@media (max-width : 767px){
+@media (max-width:767px) {
+
+    .cast,
+    .content {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+}
+
+.cast span,
+.content>div {
+    margin: 1px 6px;
+    width: 100%;
+    /* Two items per row */
+}
+
+@media (max-width : 767px) {
     .content {
         flex-direction: row;
     }

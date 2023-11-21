@@ -40,11 +40,11 @@ const MoreDetails = ({ details: { casts, genres } }) => {
             </div>
 
             <div className="cast">
-            <p className="smaller">Casts</p>
+                <p className="smaller">Casts</p>
                 {
                     casts.cast.map((cas, index) => {
                         if (index < 8)
-                            return <p>{cas.name}</p>
+                            return <span>{cas.name}</span>
                         else {
                             return
                         }
