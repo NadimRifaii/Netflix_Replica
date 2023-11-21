@@ -1,4 +1,5 @@
 import React from "react";
+// import React, {useState, useEffect} from 'react'
 import ComingSoonText from "../ComingSoonItem/soon-item.component";
 import './coming-soon-container.styles.css'
 

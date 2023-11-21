@@ -20,7 +20,7 @@ const ImagesContainer = () => {
             {
                 Object.keys(images).length > 0 &&
                 images.map((image, index) => {
-                    return <ImageCard key={index} imageUrl={image.poster_path} />
+                    return <ImageCard key={index} imageUrl={image.backdrop_path} />
                 })
             }
         </div>
