@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./movieDetails.style.css";
-import { getMovieDetails } from "../utils/api.utils";
+import { getMovieDetails } from '../../utils/api.utils.js'
+import MoreDetails from "../MoreDetails/moreDetails.component";
 
 
 const MovieDetails = (props) => {
@@ -29,6 +30,7 @@ const MovieDetails = (props) => {
     const { original_title: title, release_date: date, runtime, genres, overview, backdrop_path: bgImage, casts } = movieDetails
     return (
         Object.keys(movieDetails).length>0 && //this is conditional rendering
+        <div className="page">
         <div className="movie-details-container" style={{
             backgroundImage: `url(https://image.tmdb.org/t/p/w1280${bgImage})`,
             backgroundSize: 'cover',
@@ -52,6 +54,8 @@ const MovieDetails = (props) => {
             </div>
         </div>
         </div >
+        <MoreDetails details={{genres, casts }} />
+        </div>
     );
 }
 
