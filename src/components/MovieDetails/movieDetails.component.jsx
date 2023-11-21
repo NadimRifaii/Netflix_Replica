@@ -1,26 +1,61 @@
 import React from "react";
+import { useEffect, useState } from "react";
 import "./movieDetails.style.css";
-
+import { getMovieDetails } from "../../utils/api.utils";
+//
+import MoreDetails from '../MoreDetails/moreDetails.component.jsx'
 const MovieDetails = (props) => {
+    const [movieDetails, setMovieDetails] = useState({})
+    const id = 507089;
+    useEffect(() => {
+        async function getMovie() {
+            const data = await getMovieDetails(id)
+            setMovieDetails(data)
+        }
+        getMovie()
+    }, [])
+    function convertMinutesToHoursAndMinutes(minutes) {
+        const hours = Math.floor(minutes / 60);
+        const remainingMinutes = minutes % 60;
+        return `${hours} h ${remainingMinutes} minutes`;
+    }
+    function getCast(casts, count) {
+        let str = []
+        for (let i = 0; i < count; i++) {
+            str.push(casts[i].name)
+        }
+        return str.join(' ,')
+    }
+    const { original_title: title, release_date: date, runtime, genres, overview, backdrop_path: bgImage, casts } = movieDetails
+    console.log(movieDetails)
     return (
-        <div className="movie-details-container">
-            <div className="movie-details">
+        //if(movieDetails) return => 
+        Object.keys(movieDetails).length > 0 &&
+        <div className="page">
+            <div className="movie-details-container" style={{
+                backgroundImage: `url(https://image.tmdb.org/t/p/w1280${bgImage})`,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+            }}>
+                <div className="movie-details">
                     <div>
-                        <span class="movie-title"> <h2>Scarface</h2></span>
+                        <span className="movie-title"> <h2>{title}</h2></span>
                     </div>
                     <div>
-                        <span class="movie-year">1983 | </span>
-                        <span class="movie-rating">18+</span>
-                        <span class="movie-duration"> | 2h 49m | </span>
-                        <span class="movie-genre">Thrillers</span>
+                        <span className="movie-year">{date.split('-')[0]} | </span>
+                        <span className="movie-rating">18+</span>
+                        <span className="movie-duration"> | {convertMinutesToHoursAndMinutes(runtime)} | </span>
+                        <span className="movie-genre">{genres[0].name}</span>
                     </div>
                     <div className="desc">
-                        <span class="movie-plot">In a ruthless rise to Miami drug lord, a Cuban-born gangster descends into addiction, obsession and brutality, with grisly consequences.</span>
+                        <span className="movie-plot">{overview}</span>
                     </div>
                     <div>
-                        <span class="movie-stars">Starring: Al Pacino, Steven Bauer, Michelle Pfeiffer</span>
+                        <span className="movie-stars">Cast: {getCast(casts.cast, 3)}</span>
                     </div>
+                </div>
             </div>
+            <MoreDetails details={{ getCast, genres, casts }} />
         </div>
     );
 }

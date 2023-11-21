@@ -1,6 +1,12 @@
 import React from "react";
 import "./moreDetails.style.css"
-const MoreDetails = () => { 
+const MoreDetails = ({ details: { casts, genres } }) => {
+    function getGenres() {
+        let str = []
+        for (let i = 0; i < genres.length; i++)
+            str.push(genres[i].name)
+        return str.join(' ,')
+    }
     return (
         <div className="more-details-container">
             <div>
@@ -14,7 +20,7 @@ const MoreDetails = () => {
 
                 <div className="section">
                     <p className="smaller">Genres</p>
-                    <p>Classic Movies, Crime Movies, Drama Movies, Thriller Movies</p>
+                    <p>{getGenres()}</p>
                 </div>
                 <div className="section">
                     <p className="smaller">This movie is...</p>
@@ -33,31 +39,16 @@ const MoreDetails = () => {
                 </div>
             </div>
 
-            <div className="content"> 
-                <div className="section">
-                    <p className="smaller">Cast</p>
-                    <p>Al Pacino</p>
-                    <p>Paul Shenar</p>
-                    <p>Harris Yulin</p>
-                </div>
-
-                <div className="section">
-                    <p className="smaller"> </p>
-                    <p>Steven Bauer</p>
-                    <p>Robert Loggia</p>
-                    <p>Ángel Salazar</p>
-                </div>
-                <div className="section">
-                    <p className="smaller"> </p>
-                    <p>Michelle Pfeiffer</p>
-                    <p>Miriam Colon</p>
-                    <p>Pepe Serna</p>
-                </div>
-                <div className="section">
-                    <p className="smaller"> </p>
-                    <p>Mary Elizabeth Mastrantonio</p>
-                    <p>F. Murray Abraham</p>
-                </div>
+            <div className="cast">
+                {
+                    casts.cast.map((cas, index) => {
+                        if (index < 7)
+                            return <p>{cas.name}</p>
+                        else {
+                            return
+                        }
+                    })
+                }
             </div>
         </div>
     )

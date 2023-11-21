@@ -20,3 +20,15 @@ export async function getMoviesByGenre(genre) {
     console.log(error)
   }
 }
+
+export async function getMovieDetails(movieId) {
+  return fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=ad1a2a4cb80d72ec16fe712446738ea8&append_to_response=casts,videos,images,releases`)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data)
+      return data
+    })
+    .catch(error => {
+      console.log(error)
+    })
+}
