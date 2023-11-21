@@ -20,7 +20,9 @@ const ImagesContainer = () => {
             {
                 Object.keys(images).length > 0 &&
                 images.map((image, index) => {
-                    return <ImageCard key={index} imageUrl={image.backdrop_path} />
+                    if (index<9){
+                        return <ImageCard key={index} imageUrl={image.backdrop_path} />
+                    }
                 })
             }
         </div>
