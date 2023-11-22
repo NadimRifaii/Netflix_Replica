@@ -11,8 +11,6 @@ const Home = () => {
       <MovieInfo />
       <DescriptionContainer />
       <QuestionsContainer />
-      <InputButton />
-      <Footer2 />
     </div>
   )
 }

@@ -4,6 +4,10 @@
   cursor: pointer;
 }
 
+.question-container:last-child {
+  margin-bottom: 30px;
+}
+
 .holder {
   padding: 24px;
   display: flex;

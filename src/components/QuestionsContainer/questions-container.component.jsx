@@ -1,5 +1,6 @@
 import './questions-container.styles.css'
-
+import InputButton from '../InputButton/input-button.component';
+import Footer2 from '../Footer2Components/Footer2';
 import Question from "../QuestionComponent/question.component";
 const QuestionsContainer = () => {
   const questions = [
@@ -42,12 +43,18 @@ Kids profiles come with PIN-protected parental controls that let you restrict th
   ]
   return (
     <>
-      <h1>Frequently Asked Questions</h1>
-      {
-        questions.map(question => {
-          return <Question key={question.id} title={question.title} answer={question.answer} />
-        })
-      }
+      <div className="questions-holder">
+        <h1>Frequently Asked Questions</h1>
+        <div className="container">
+          {
+            questions.map(question => {
+              return <Question key={question.id} title={question.title} answer={question.answer} />
+            })
+          }
+        </div>
+        <InputButton />
+        <Footer2 />
+      </div>
     </>
   )
 }
