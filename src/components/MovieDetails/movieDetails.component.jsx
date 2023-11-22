@@ -27,7 +27,7 @@ const MovieDetails = (props) => {
         }
         return str.join(' ,')
     }
-    const { original_title: title, release_date: date, runtime, genres, overview, backdrop_path: bgImage, casts } = movieDetails
+    const { original_title: title, tagline, release_date: date, runtime, genres, overview, backdrop_path: bgImage, casts } = movieDetails
     return (
         Object.keys(movieDetails).length > 0 && //this is conditional rendering
         <div className="page">
@@ -55,7 +55,7 @@ const MovieDetails = (props) => {
                 </div>
             </div >
             <WatchJoin />
-            <MovieDescription />
+            <MovieDescription tagline={tagline} />
             <MoreDetails details={{ genres, casts }} />
 
         </div>

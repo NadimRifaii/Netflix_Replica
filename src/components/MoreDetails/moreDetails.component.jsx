@@ -38,18 +38,20 @@ const MoreDetails = ({ details: { casts, genres } }) => {
                     <p>Arabic, English, French</p>
                 </div>
             </div>
+            <div className="cast-holder">
 
-            <div className="cast">
                 <p className="smaller">Casts</p>
-                {
-                    casts.cast.map((cas, index) => {
-                        if (index < 8)
-                            return <span className="cast" key={index}>{cas.name}</span>
-                        else {
-                            return
-                        }
-                    })
-                }
+                <div className="cast">
+                    {
+                        casts.cast.map((cas, index) => {
+                            if (index < 8)
+                                return <span className="cast" key={index}>{cas.name}</span>
+                            else {
+                                return
+                            }
+                        })
+                    }
+                </div>
             </div>
         </div>
     )

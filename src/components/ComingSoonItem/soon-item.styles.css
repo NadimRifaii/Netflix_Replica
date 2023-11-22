@@ -1,21 +1,22 @@
-.description-text{
+.description-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     background-color: #181818;
 }
 
-.movie-title{
+.movie-title {
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
     color: white;
 }
 
-.description-text p{
+.description-text p,
+p.behind-scenes {
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
     color: #a3a3a3;
-    width:80%;
+    width: 80%;
 }

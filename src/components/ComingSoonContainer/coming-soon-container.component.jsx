@@ -18,19 +18,18 @@ const ComingSoonContainer = () => {
 
 
     return (
-        <div className="coming-soon-wrapper"> 
-            <div>
-                <h2>Coming Soon</h2>
+        <div className="coming-soon-wrapper container">
+            <h2>Coming Soon</h2>
+            <div className="coming-soon-container ">
+                {comingSoon.length > 0 &&
+                    comingSoon.slice(1, 9).map((coming, index) => {
+                        return (
+                            <ComingSoonText key={coming.id} header={coming.original_title} paragraph={coming.overview} />
+                        )
+                    })
+                }
             </div>
-            <div className="coming-soon-container container">
-                    {comingSoon.length > 0 &&
-                        comingSoon.slice(1,9).map((coming, index) => {
-                            return (
-                                <ComingSoonText key={coming.id} header={coming.original_title} paragraph={coming.overview} />
-                            )
-                        })
-                    }
-            </div>
+            <p className="behind-scenes" >Go behind the scenes of Netflix TV shows and movies, see what's coming soon and watch bonus videos on Tudum.com.</p>
         </div>
     );
 };

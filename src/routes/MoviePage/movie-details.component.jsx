@@ -8,7 +8,6 @@ const MoviePage = () => {
     <div className="movie-page">
       <Header1 />
       <MovieDetails />
-      {/* movie details + moredetails */}
       <ImageContainer />
       <CommingSoonContainer />
       <Footer2 />
