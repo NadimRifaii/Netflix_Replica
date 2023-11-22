@@ -13,8 +13,9 @@ const VideoOverImage = ({ tvImage, tvVideo, applyConditionalStyle, addDownloadCo
             </video>
             {addDownloadContainer && (
                 <div className={downloadContainer}>
-                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" alt="stranger-things" />
-                    
+                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" alt="stranger-things" className='movie-image' />
+                    <div className="movie-downlaod"><span className='movie-title'>Stranger Things</span> <div>Downloading...</div></div>
+                    <img src="./download.png" alt="" className='icon'/>
                 </div>
             )}
         </div>
