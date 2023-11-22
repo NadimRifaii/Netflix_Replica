@@ -7,3 +7,8 @@ a {
 .card {
   font-size: 12px;
 }
+
+.card-title {
+  font-weight: bold;
+  margin-top: 15px;
+}

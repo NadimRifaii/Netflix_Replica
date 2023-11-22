@@ -20,18 +20,21 @@ const Genre = () => {
     })
   }, []);
   return (
-    <div className="genres container">
-      <div className="top-info">
-        <h1>Movies</h1>
-        <p>
-          Movies move us like nothing else can, whether they’re scary, funny, dramatic, romantic or anywhere in-between. So many titles, so much to experience.
-        </p>
+    <div className="genres">
+      <div className="container">
+        <div className="top-info">
+          <h1>Movies</h1>
+          <p>
+            Movies move us like nothing else can, whether they’re scary, funny, dramatic, romantic or anywhere in-between. So many titles, so much to experience.
+          </p>
+        </div>
+        {
+          genresArray.length && genresArray.map(genre => {
+            return <CardContainer key={genre.id} genre={genre} />
+          })
+        }
       </div>
-      {
-        genresArray.length && genresArray.map(genre => {
-          return <CardContainer key={genre.id} genre={genre} />
-        })
-      }
+
     </div>
   )
 }
