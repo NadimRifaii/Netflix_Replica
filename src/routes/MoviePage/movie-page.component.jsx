@@ -1,10 +1,8 @@
-import Header1 from '../../components/Header1Components/Header1.jsx'
 import MovieDetails from '../../components/MovieDetails/movieDetails.component.jsx'
 import CommingSoonContainer from '../../components/ComingSoonContainer/coming-soon-container.component.jsx'
 import ImageContainer from '../../components/ImagesContainer/images-container.component.jsx'
 import Footer2 from '../../components/Footer2Components/Footer2.jsx'
-import { useParams, Routes, Route } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 const MoviePage = () => {
   const { id } = useParams()
   return (

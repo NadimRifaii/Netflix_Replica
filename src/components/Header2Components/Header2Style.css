@@ -32,6 +32,7 @@
     align-self: center;
     margin: auto;
     position: absolute;
+    z-index: 10;
     width: 100%;
     top: 0;
     left: 0;

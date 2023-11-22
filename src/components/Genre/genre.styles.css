@@ -8,6 +8,10 @@
   padding-left: 9px;
 }
 
+.genres .top-info {
+  padding-top: 50px;
+}
+
 .genres p {
   max-width: 600px;
   text-align: left;

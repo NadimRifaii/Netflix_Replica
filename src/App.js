@@ -1,5 +1,5 @@
 import './App.css'
-import MoviePage from './routes/MoviePage/movie-details.component';
+import MoviePage from './routes/MoviePage/movie-page.component.jsx';
 import Home from './routes/Home/home.component';
 import GenrePage from './routes/GenrePage/genre-page.component.jsx'
 import { Routes, Route } from 'react-router-dom';

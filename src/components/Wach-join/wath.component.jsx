@@ -16,10 +16,10 @@ const WatchJoin = () => {
                                                 fill="url(#9f8d7ad6-602a-4a28-81a3-f2fc8f97e556-a)"></path><path d="M225 0l349 983c76 3 136 9 203 17L423 0H225"
                                                     fill="#e50914"></path></svg>
                         </span>
-                        <p>Watch all you want.</p>
                     </div>
                 </div>
-                <div>
+                <div className="right">
+                    <p>Watch all you want.</p>
                     <button>JOIN NOW</button>
                 </div>
             </div>
