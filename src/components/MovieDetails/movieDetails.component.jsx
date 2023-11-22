@@ -4,17 +4,16 @@ import { getMovieDetails } from '../../utils/api.utils.js'
 import MoreDetails from "../MoreDetails/moreDetails.component";
 import WatchJoin from "../Wach-join/wath.component.jsx";
 import MovieDescription from "../MovieDescription/movieDescription.component.jsx";
-const MovieDetails = (props) => {
+const MovieDetails = ({ id }) => {
     const [movieDetails, setMovieDetails] = useState({});
-    const id = 507089;
-
+    console.log(id)
     useEffect(() => {
         async function getMovie() {
             const data = await getMovieDetails(id)
             setMovieDetails(data)
         }
         getMovie()
-    }, []);
+    }, [id]);
     function convertMinutesToHoursAndMinutes(minutes) {
         const hours = Math.floor(minutes / 60);
         const remainingMinutes = minutes % 60;

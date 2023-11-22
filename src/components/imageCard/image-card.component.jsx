@@ -1,17 +1,15 @@
 import React from "react";
 import './image-card.styles.css'
-
-const ImageCard = ({ imageUrl }) => {
-    console.log(imageUrl)
+import { Link } from "react-router-dom";
+const ImageCard = ({ imageUrl, id }) => {
     return (
         <div className="image-card">
-            <a href='#'>
+            <Link to={`/movie/${id}`}>
                 <div className="image-holder">
                     <img src={`https://image.tmdb.org/t/p/w342${imageUrl}`} alt="movie image" />
                 </div>
-            </a>
+            </Link>
         </div>
-
     )
 }
 

@@ -1,15 +1,16 @@
 import './card.styles.css'
-let Card = ({ movie: { original_title: title, backdrop_path: imageUrl } }) => {
+import { Link } from 'react-router-dom'
+let Card = ({ movie: { original_title: title, backdrop_path: imageUrl, id } }) => {
   return (
     <div className="card">
-      <a href="">
+      <Link to={`/movie/${id}`}>
         <div className="image-holder">
           <img src={`https://image.tmdb.org/t/p/w342${imageUrl}`} />
         </div>
         <div className="title">
           {title}
         </div>
-      </a>
+      </Link>
     </div>
   )
 }
