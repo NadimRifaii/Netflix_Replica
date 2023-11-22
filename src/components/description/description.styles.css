@@ -1,3 +1,11 @@
+.description-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 5px;
+}
+
 .description-container >div{
     width: 50%;
 }

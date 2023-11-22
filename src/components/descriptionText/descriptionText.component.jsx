@@ -4,11 +4,9 @@ import './descriptionText.styles.css';
 
 const DescriptionText = ({ header, paragraph }) => {
   return (
-    <div className='description-text-container'>
-      <div className="description-text-1">
-        <h1 className='description-title'>{header}</h1>
-        <p  className='description-prg'>{paragraph}</p>
-      </div>
+    <div className="description-text-1">
+      <h1 className='description-title'>{header}</h1>
+      <p  className='description-prg'>{paragraph}</p>
     </div>
   );
 };
