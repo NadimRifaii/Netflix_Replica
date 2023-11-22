@@ -1,33 +1,35 @@
-.description-container{
+.description-container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px;
     margin: 5px;
+    background-color: black;
 }
 
-.description-container >div{
+.description-container>div {
     width: 50%;
 }
 
-.flex-row{
+.flex-row {
     display: flex;
     align-items: center;
     align-content: center;
 }
 
-.flex-row-reverse{
+.flex-row-reverse {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     align-content: center;
 }
 
-@media (max-width:992px){
-    .description-container >div{
+@media (max-width:992px) {
+    .description-container>div {
         width: 100%;
     }
-    .description-container{
+
+    .description-container {
         flex-direction: column;
     }
 }

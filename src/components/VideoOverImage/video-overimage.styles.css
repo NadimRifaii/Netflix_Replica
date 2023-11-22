@@ -2,23 +2,22 @@
     position: relative;
     overflow: hidden;
     background-color: black;
-    z-index: -2;
 }
 
 .tv-image,
 .tv-image-2 {
     width: 100%;
     height: 100%;
+    position: relative;
+    z-index: 2;
 }
 
 .tv-video {
     position: absolute;
-    top: 49%;
+    top: 48%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 75%;
+    transform: translate(-50%, -50%) scale(1.05);
     height: auto;
-    z-index: -1;
 }
 
 .tv-video-2 {
@@ -28,7 +27,6 @@
     transform: translate(-50%, -50%);
     width: 65%;
     height: auto;
-    z-index: -1;
 
 }
 
@@ -58,7 +56,14 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 65%;
-        height: 130px;
-        z-index: -1;
+        height: unset;
+    }
+
+    .tv-container .tv-video {
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(.5);
+        height: auto;
     }
 }
