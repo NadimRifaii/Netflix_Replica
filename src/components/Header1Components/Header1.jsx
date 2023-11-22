@@ -6,6 +6,7 @@ export default function Header1() {
         <>
             <div className="nav-1">
                 <img src='/netflix.png' alt="" className='netflix' />
+                <img src="/smallnetflix.png" alt="N" className="small-netflix"/>
                 <div className="nav-1-right">
                     <div className="unlimited white txt-13">UNLIMITED TV SHOWS AND MOVIES</div>
                     <button className="red-background white txt-13">JOIN NOW</button>

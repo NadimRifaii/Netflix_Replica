@@ -40,6 +40,14 @@
     left: 0;
 }
 
+.small-netflix{
+    width: 35px;
+    height: 45px;
+    padding-left: 15px;
+    line-height: 90px;
+    display: none;
+}
+
 .netflix {
     width: 140px;
     height: 40px;
@@ -65,5 +73,14 @@
 @media (max-width:767px) {
     .nav-1-right>button {
         /* padding: 5px; */
+    }
+}
+
+@media (max-width:767px){
+    .small-netflix{
+        display: block;
+    }
+    .netflix{
+        display: none;
     }
 }
