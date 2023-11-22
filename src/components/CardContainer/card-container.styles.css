@@ -1,11 +1,15 @@
 .card-container {
   margin: auto;
   position: relative;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .card-container h2 {
   padding-left: 10px;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+  margin-bottom: none;
 }
 
 .cards-holder {
@@ -69,4 +73,5 @@
 
 .cards-holder>div {
   min-width: 300px;
+  min-height: 220px;
 }

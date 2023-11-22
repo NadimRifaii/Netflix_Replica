@@ -3,13 +3,26 @@
 .genres h1 {
   text-align: left;
   width: unset;
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 62px;
+  color: white;
+  margin-top: 120px;
 }
 
 .genres p {
   max-width: 600px;
   text-align: left;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 30px;
 }
 
 .genres a {
   color: white;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
 }
