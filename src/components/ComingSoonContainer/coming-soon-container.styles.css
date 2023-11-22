@@ -1,10 +1,23 @@
+.coming-soon-wrapper{
+    display: flex;
+    flex-direction: column;
+}
 .coming-soon-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
     background-color: #181818;
     gap:10px;
+}
+
+.coming-soon-wrapper h2{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34px;
+    color: white;
+    margin-bottom: 10px;
+    padding-left:64px;
+    /* padding-left: none; */
 }
 
 .coming-soon-container > div{

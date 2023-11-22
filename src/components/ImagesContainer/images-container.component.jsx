@@ -16,13 +16,19 @@ const ImagesContainer = () => {
     }, [])
     console.log(images)
     return (
-        <div className="images-container container">
-            {
-                Object.keys(images).length > 0 &&
-                images.results.map((image, index) => {
-                    return index < 12 && <ImageCard key={index} imageUrl={image.backdrop_path} />
-                })
-            }
+        <div className='images-wrapper container'>  
+            <div>
+                <h2>More Like This</h2>
+            </div>
+            <div className="images-container">
+            
+                {
+                    Object.keys(images).length > 0 &&
+                    images.results.map((image, index) => {
+                        return index < 12 && <ImageCard key={index} imageUrl={image.backdrop_path} />
+                    })
+                }
+            </div>
         </div>
     )
 }

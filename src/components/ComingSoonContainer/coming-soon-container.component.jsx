@@ -18,14 +18,19 @@ const ComingSoonContainer = () => {
 
 
     return (
-        <div className="coming-soon-container container">
-            {comingSoon.length > 0 &&
-                comingSoon.map((coming, index) => {
-                    return (
-                        index < 8 && <ComingSoonText key={coming.id} header={coming.original_title} paragraph={coming.overview} />
-                    )
-                })
-            }
+        <div className="coming-soon-wrapper"> 
+            <div>
+                <h2>Coming Soon</h2>
+            </div>
+            <div className="coming-soon-container container">
+                    {comingSoon.length > 0 &&
+                        comingSoon.slice(1,9).map((coming, index) => {
+                            return (
+                                <ComingSoonText key={coming.id} header={coming.original_title} paragraph={coming.overview} />
+                            )
+                        })
+                    }
+            </div>
         </div>
     );
 };

@@ -1,9 +1,21 @@
+.images-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
 .images-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34px;
+    color: white;
 }
 
 .images-container>div {
