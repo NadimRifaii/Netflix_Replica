@@ -1,13 +1,21 @@
-.input-button{
+.input-button {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: fit-content;
     margin: 10px auto;
     gap: 15px;
 }
 
-@media (max-width : 767px){
-    .input-button{
+.input-button button {
+    font-weight: bold;
+    color: white;
+    padding: 12px 20px;
+    font-size: 20px;
+}
+
+@media (max-width : 767px) {
+    .input-button {
         flex-direction: column;
     }
 

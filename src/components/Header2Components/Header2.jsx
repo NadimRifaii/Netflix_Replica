@@ -7,7 +7,6 @@ export default function Header2() {
         <div className='nav-2'>
             <div className='nav-2-container'>
                 <div className='nav-2-innercontainer'>
-
                     <img src="/netflix.png" alt="" className='netflix2' width='40px' />
                     <div className='nav-2-right'>
                         <Btn2 />

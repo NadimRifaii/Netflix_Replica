@@ -1,3 +1,11 @@
-.Info-movie h1,p {
-    text-align: center ;
+.movie-info {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/a09bb938-2d90-42ae-986e-5a3e4abf9e77/504c814b-57c3-43af-ab7b-4def88fd3a89/LB-en-20231113-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+}
+
+.movie-info h1,
+p {
+    text-align: center;
 }

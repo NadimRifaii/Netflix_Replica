@@ -32,6 +32,9 @@ svg {
 
 button {
     background-color: #e50914;
+}
+
+.watch-container {
     padding: 10px;
     border: none;
     color: white;
