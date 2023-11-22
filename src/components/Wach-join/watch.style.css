@@ -32,6 +32,11 @@ svg {
 
 button {
     background-color: #e50914;
+    font-weight: bold;
+    color: white;
+    padding: 12px 20px;
+    margin-right: 20px;
+    font-size: 15px;
 }
 
 .watch-container {
