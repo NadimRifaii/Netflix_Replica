@@ -1,18 +1,17 @@
 .movie-description-container {
-    width: 90%;
-    margin: 0 auto; 
+    margin: 0 auto;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    padding: 20px; 
+    padding: 20px;
 }
 
 .inner-container {
-    text-align: center; 
-    width : 40%;
+    text-align: center;
+    width: 40%;
     margin: 0 auto;
 }
 
 .inner-container p {
-    color: #333; 
-    font-size: 16px; 
-}   
+    color: #333;
+    font-size: 16px;
+}

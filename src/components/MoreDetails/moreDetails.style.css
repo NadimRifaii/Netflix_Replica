@@ -1,5 +1,4 @@
 .more-details-container {
-    padding: 0 30px;
     display: flex;
     flex-direction: column;
 }
@@ -55,7 +54,7 @@
 
 .cast span,
 .content>div {
-    margin: 1px 6px;
+    margin: 1px 0px;
     width: 100%;
     /* Two items per row */
 }

@@ -2,9 +2,9 @@ import React from "react"
 import Btn1 from "../btns-components/Btn1"
 import "./Footer2.css"
 
-export default function Footer2(){
-    return(
-        <footer>
+export default function Footer2() {
+    return (
+        <footer className="container" >
             <div className="questions">Questions? Contact us.</div>
             <ul className="list">
                 <li>FAQ</li>
@@ -23,7 +23,6 @@ export default function Footer2(){
                 <li>Legal Notices</li>
                 <li>Only on Netflix</li>
             </ul>
-            <Btn1/>
             <div className="batata">Netflix Lebanon</div>
         </footer>
     )

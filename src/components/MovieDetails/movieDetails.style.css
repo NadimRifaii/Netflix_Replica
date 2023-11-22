@@ -1,9 +1,14 @@
+.movie-page {
+    background-color: #181818;
+}
+
 .movie-details-container {
-    height:calc(100vh - 24px);
+    height: calc(100vh - 49px);
     display: flex;
-    padding-left: 30px;
-    align-items: center; 
+    align-items: center;
+    background-repeat: no-repeat;
     color: white;
+    margin-top: 49px;
 }
 
 .movie-details {
@@ -15,15 +20,19 @@
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
 .watch-des {
     margin-top: 10px;
 }
 
-.movie-year, .movie-rating, .movie-duration, .movie-genre {
+.movie-year,
+.movie-rating,
+.movie-duration,
+.movie-genre {
     font-size: smaller;
 }
 
-.movie-rating{
+.movie-rating {
     border: 1px solid white;
     padding: 2px;
 }

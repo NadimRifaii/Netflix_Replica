@@ -8,7 +8,7 @@ const MoreDetails = ({ details: { casts, genres } }) => {
         return str.join(' ,')
     }
     return (
-        <div className="more-details-container">
+        <div className="more-details-container container">
             <div>
                 <h2>More Details</h2>
             </div>

@@ -16,13 +16,11 @@ const ImagesContainer = () => {
     }, [])
     console.log(images)
     return (
-        <div className="images-container">
+        <div className="images-container container">
             {
                 Object.keys(images).length > 0 &&
-                images.map((image, index) => {
-                    if (index<9){
-                        return <ImageCard key={index} imageUrl={image.backdrop_path} />
-                    }
+                images.results.map((image, index) => {
+                    return index < 12 && <ImageCard key={index} imageUrl={image.backdrop_path} />
                 })
             }
         </div>

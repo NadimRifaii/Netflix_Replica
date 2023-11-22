@@ -1,23 +1,23 @@
-.images-container{
-    display:flex;
+.images-container {
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    gap:10px;
+    gap: 10px;
 }
 
-.images-container > div{
+.images-container>div {
     width: calc(97% / 4)
 }
 
-@media (max-width: 1440px){
-    .images-container >div{
+@media (max-width: 1440px) {
+    .images-container>div {
         width: calc(97% / 3)
     }
 }
 
-@media (max-width: 1024px){
-    .images-container >div{
-        width: calc(97%/2);
+@media (max-width: 1023px) {
+    .images-container>div {
+        width: calc(94%/2);
     }
 }

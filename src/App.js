@@ -1,9 +1,10 @@
 import './App.css'
-import Genre from './components/Genre/genre.component.jsx'
+import MoviePage from './routes/MoviePage/movie-details.component';
+
 export default function App() {
   return (
     <>
-      <Genre />
+      <MoviePage />
     </>
   );
 }

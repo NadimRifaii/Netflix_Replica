@@ -18,11 +18,11 @@ const ComingSoonContainer = () => {
 
 
     return (
-        <div className="coming-soon-container">
+        <div className="coming-soon-container container">
             {comingSoon.length > 0 &&
                 comingSoon.map((coming, index) => {
                     return (
-                        index < 6 && <ComingSoonText key={coming.id} header={coming.original_title} paragraph={coming.overview} />
+                        index < 8 && <ComingSoonText key={coming.id} header={coming.original_title} paragraph={coming.overview} />
                     )
                 })
             }

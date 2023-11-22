@@ -1,65 +1,64 @@
-*{
+* {
     padding: 0;
     margin: 0;
     border: 0;
 }
 
-.nav-1-right > button{
-    padding: 9px 20px;
-}
 
-.red{
+.red {
     color: #f40612;
 }
-.red-background{
+
+.red-background {
     background-color: #f40612;
 }
 
-.black-background{
+.black-background {
     background-color: #000;
     border: 1px solid #888;
 }
 
-.txt-13{
+.txt-13 {
     font-size: 13px;
     font-weight: 400;
 }
 
-.white{
+.white {
     color: #fff;
 }
 
-.nav-1{
+.nav-1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 24px;
     background-color: #000;
-    padding: 16px 3% 16px 2%;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
     z-index: 20;
-    
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
-.netflix{
+.netflix {
     width: 140px;
     height: 40px;
     line-height: 90px;
 }
 
-.nav-1-right{
+.nav-1-right {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-@media(max-width: 992px){
-    .unlimited{
+@media(max-width: 992px) {
+    .unlimited {
         display: none;
     }
 }
 
-
+@media (max-width:767px) {
+    .nav-1-right>button {
+        /* padding: 5px; */
+    }
+}
